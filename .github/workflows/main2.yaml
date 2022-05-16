@@ -8,5 +8,5 @@ jobs:
     - name: test
       uses: desaintmartin/helm-kubeval-action@master
       with:
-        path: ./chart
+        path: 'chart'
         config: ./config_repos
