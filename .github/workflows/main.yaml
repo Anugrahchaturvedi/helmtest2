@@ -9,4 +9,4 @@ jobs:
       - name: test
         uses: Anugrahchaturvedi/helm-kubeval-action@master
         with:
-          path: 'chart'
+          path: ./chart
