@@ -1,13 +1,12 @@
 on: [pull_request]
 
+name: Validate
 jobs:
-  test:
+  kubeval:
     runs-on: ubuntu-latest
-    name: Helm Kubeval Action test
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: helm kubeval
+      - uses: actions/checkout@master
+      - name: test
         uses: Anugrahchaturvedi/actions-repo@master
         with:
           path: 'chart'
